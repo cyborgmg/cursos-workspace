@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  jpa:
+    show-sql: true
+  plusoft:
+    datasource:
+      driverClassName: oracle.jdbc.driver.OracleDriver
+      jdbcUrl: jdbc:oracle:thin:@//xxxx.xxxx:1521/TESTE
+      username: xxxx
+      password: xxxx
+  acquia:
+    datasource:
+      driverClassName: org.postgresql.Driver
+      jdbcUrl: jdbc:postgresql://xxxx:5432/xxxxx
+      username: xxxx
+      password: xxxx

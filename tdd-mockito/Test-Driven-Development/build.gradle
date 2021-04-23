@@ -1,0 +1,27 @@
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'application'
+
+    group 'org.example'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+
+        compile group: "org.projectlombok", name: "lombok", version: "1.18.2"
+        annotationProcessor group: "org.projectlombok", name: "lombok", version: "1.18.2"
+
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+        testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

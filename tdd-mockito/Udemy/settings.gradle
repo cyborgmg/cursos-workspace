@@ -1,0 +1,6 @@
+rootProject.name = 'Udemy'
+include 'Retangulo'
+include 'Pilha'
+include 'Calculadora'
+include 'Vendas'
+

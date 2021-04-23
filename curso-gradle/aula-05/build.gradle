@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.cyborg'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task debug(type: JavaExec) {
+
+    debug = true
+
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'br.com.cyborg.Main'
+
+    args 'args'
+}

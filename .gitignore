@@ -1,0 +1,6 @@
+**/node_modules/**
+**/target/**
+**/.metadata/**
+**/build/**
+**/.gradle/**
+**/node_modules/**

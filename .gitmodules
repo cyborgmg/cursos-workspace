@@ -1,0 +1,30 @@
+[submodule "jenkins"]
+	path = jenkins
+	url = https://github.com/cyborgmg/jenkins-udemy
+[submodule "kafka/spring-kafaka-object-ssl"]
+	path = kafka/spring-kafaka-object-ssl
+	url = https://github.com/cyborgmg/spring-kafaka-object-ssl
+[submodule "kafka/spring-kafaka-object"]
+	path = kafka/spring-kafaka-object
+	url = https://github.com/cyborgmg/spring-kafaka-object
+[submodule "logback"]
+	path = logback
+	url = https://github.com/cyborgmg/logback
+[submodule "ms-course-RewritePathWithHeader"]
+	path = ms-course-RewritePathWithHeader
+	url = https://github.com/cyborgmg/ms-course-RewritePathWithHeader
+[submodule "ms-course"]
+	path = ms-course
+	url = https://github.com/cyborgmg/ms-course
+[submodule "spring-batch"]
+	path = spring-batch
+	url = https://github.com/cyborgmg/spring-batch
+[submodule "spring-soap"]
+	path = spring-soap
+	url = https://github.com/cyborgmg/spring-soap
+[submodule "spring-vault-postgres"]
+	path = spring-vault-postgres
+	url = https://github.com/cyborgmg/spring-vault-postgres
+[submodule "RewritePathWithHeader-spring-gateway"]
+	path = RewritePathWithHeader-spring-gateway
+	url = https://github.com/cyborgmg/RewritePathWithHeader-spring-gateway

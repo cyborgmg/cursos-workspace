@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../CarrinhoProdutos/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../CarrinhoProdutos/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../CarrinhoProdutos/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../CarrinhoProdutos/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.18.2" level="project" />
+  </component>
+</module>
