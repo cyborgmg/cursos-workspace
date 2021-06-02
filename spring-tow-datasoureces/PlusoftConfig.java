@@ -25,6 +25,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @EnableJpaRepositories(
         entityManagerFactoryRef = "plusoftEntityManagerFactory",
         basePackages = { "br.com.xxxxxxxxxx.srv0086.plusoft.repository" },

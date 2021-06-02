@@ -24,6 +24,7 @@ import java.util.Map;
 
 @Configuration
 @EnableTransactionManagement
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @EnableJpaRepositories(
         entityManagerFactoryRef = "acquiaEntityManagerFactory",
         basePackages = { "br.com.xxxxxxxxxx.srv0086.acquia.repository" },
