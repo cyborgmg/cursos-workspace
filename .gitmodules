@@ -16,6 +16,9 @@
 [submodule "ms-course"]
 	path = ms-course
 	url = https://github.com/cyborgmg/ms-course
+[submodule "ms-course-redis"]
+        path = ms-course-redis
+        url = https://github.com/cyborgmg/ms-course-redis
 [submodule "spring-batch"]
 	path = spring-batch
 	url = https://github.com/cyborgmg/spring-batch
