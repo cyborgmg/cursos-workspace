@@ -1,0 +1,47 @@
+<properties>
+    	<sonar.coverage.exclusions>
+	      **/Application.java,
+	      **/configuration/*,
+	      **/domain/errors/**,
+	      **/repository/**,
+		  **/rest/mapper/**
+    	</sonar.coverage.exclusions>
+    </properties>
+
+<build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.6</version>
+                    <configuration>
+                        <excludes>
+                            <exclude>**/Application.class</exclude>
+                            <exclude>**/br/com/cielo/mic/pix/configuration/**</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
