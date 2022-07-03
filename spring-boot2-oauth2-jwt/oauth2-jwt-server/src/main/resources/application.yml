@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+#security:
+#  jwt:
+#    key-store: classpath:keystore.jks
+#    key-store-password: letmein
+#    key-pair-alias: mytestkey
+#    key-pair-password: changeme
+
+security:
+  jwt:
+    key-store: classpath:cyborg.jks
+    key-store-password: 123456
+    key-pair-alias: cyborg
+    key-pair-password: 123456
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true

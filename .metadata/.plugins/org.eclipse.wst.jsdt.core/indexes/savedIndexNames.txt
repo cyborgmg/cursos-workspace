@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/cyborg/java/Workspaces/cursos-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3788529954.index
+1737759514.index
+2056200379.index
+1752732071.index
+2502073728.index
+2672843782.index

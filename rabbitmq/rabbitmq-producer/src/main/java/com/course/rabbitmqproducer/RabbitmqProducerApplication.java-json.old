@@ -1,0 +1,26 @@
+package com.course.rabbitmqproducer;
+
+import com.course.rabbitmqproducer.producer.MantraProducer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+//@EnableScheduling
+public class RabbitmqProducerApplication implements CommandLineRunner {
+	
+	@Autowired
+	private MantraProducer mantraProducer;
+
+	public static void main(String[] args) {
+		SpringApplication.run(RabbitmqProducerApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		mantraProducer.sendHello("{'corporationId':237,'numeroBL':'MEDUGH516973','numeroCeMercante':'152005201637336','dataOperacao':'2020-10-07','portoDeOrigem':null,'portoDeDestino':null,'agenteDeCarga':'02.378.779/0001-09 - MSC MEDITERRANEAN SHIPPING DO BRASIL LTDA','importador':'07.526.557/0055-00 - AMBEV S.A.','containers':['MEDU6298723','TEMU1369299','TGCU2116998','SEGU3670216']}");
+	}
+
+}
+

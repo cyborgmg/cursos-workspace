@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="cucumber.api.Transform"/>
+    <fullyQualifiedTypeName name="br.ce.wcaquino.coverters.TipoCoverter"/>
+    <fullyQualifiedTypeName name="br.ce.wcaquino.entidades.TipoAluguel"/>
+    <fullyQualifiedTypeName name="org.apache.camel.component.http4.HttpMethods"/>
+    <fullyQualifiedTypeName name="org.apache.camel.Exchange"/>
+    <fullyQualifiedTypeName name="org.apache.camel.Processor"/>
+    <fullyQualifiedTypeName name="org.apache.activemq.camel.component.ActiveMQComponent"/>
+</qualifiedTypeNameHistroy>

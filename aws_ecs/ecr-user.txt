@@ -1,0 +1,4 @@
+user ecr-user
+senha @C6b94gmg
+ID da chave de acesso = AKIAS77TS6MVAZHZS6O4
+Chave de acesso secreta = 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

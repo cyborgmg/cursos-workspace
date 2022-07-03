@@ -1,0 +1,52 @@
+package com.course.rabbitmqproducer;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+import com.course.rabbitmqproducer.entity.Employee;
+import com.course.rabbitmqproducer.entity.TrackingEventIn;
+import com.course.rabbitmqproducer.producer.EmployeeJsonProducer;
+import com.course.rabbitmqproducer.producer.HelloRabbitProducer;
+import com.course.rabbitmqproducer.producer.HumanResourceProducer;
+import com.course.rabbitmqproducer.producer.TrackingEventInProducer;
+
+@SpringBootApplication
+@EnableScheduling
+public class RabbitmqProducerApplication implements CommandLineRunner {
+	
+	@Autowired
+	private TrackingEventInProducer trackingEventInProducer;
+
+	public static void main(String[] args) {
+		SpringApplication.run(RabbitmqProducerApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+			
+			String payload = "{\"producer\":\"documents\",\"payload\":\"{\"id\":15048717,\"number\":\"111ThiagoTeste12345\",\"issueDate\":1597945226836,\"data\":\"{\\\"corporationDivision\\\":1966,\\\"number\\\":\\\"111ThiagoTeste12345\\\",\\\"issueDate\\\":\\\"2020-08-20T17:40:26.836Z\\\",\\\"references\\\":[],\\\"thirdParties\\\":[{\\\"id\\\":1966,\\\"name\\\":\\\"Whirlpool S.A\\\",\\\"role\\\":\\\"importer\\\"},{\\\"id\\\":1257,\\\"name\\\":\\\"KN SERVIÇOS DE LOGÍSTICA LTDA\\\",\\\"role\\\":\\\"freight_forwarder\\\"}],\\\"status\\\":\\\"Waiting for departure\\\",\\\"userRole\\\":\\\"\\\",\\\"sequencial\\\":false,\\\"departureLocation\\\":\\\"Buenos Aires (ARBUE)\\\",\\\"arrivalLocation\\\":\\\"Santos (BRSSZ)\\\",\\\"transportMode\\\":\\\"Sea\\\",\\\"masterDocument\\\":\\\"SACO/SSZ/02136\\\",\\\"houseDocument\\\":\\\"71200938008011\\\",\\\"ceMercante\\\":\\\"152005183296110\\\"}\",\"status\":null,\"items\":[],\"links\":[]}\",\"event_date\":\"2020-09-09 10:31\",\"user_id\":null,\"corporation_id\":0,\"routing_key\":\"documents.shipment\",\"entity_id\":15048717,\"entity_type\":\"shipment\",\"entity_version\":\"1.0\",\"action\":\"update\"}";
+			
+		
+			TrackingEventIn event = new TrackingEventIn(); 
+			
+			event.setId(0L);
+			event.setPayload(payload);
+			event.setProcessed(false);
+			event.setAction("update");
+			event.setProducer("documents");
+		
+			trackingEventInProducer.sendMessage(Arrays.asList(event));
+		
+	}
+
+}
+

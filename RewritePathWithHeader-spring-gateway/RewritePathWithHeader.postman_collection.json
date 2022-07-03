@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "b28f8e5d-be99-4ac7-9aba-c0efd387ffe4",
+		"name": "RewritePathWithHeader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello Frist service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-name",
+						"value": "rodrigo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/employee/message/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"message",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Second service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-id",
+						"value": "10",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/consumer/message/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consumer",
+						"message",
+						"id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

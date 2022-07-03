@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/cyborg/java/Workspaces/cursos-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2490198215.index
+/kraken.war/src/main/java

@@ -1,0 +1,2048 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Vpc": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Vpc.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/Vpc/Vpc01/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01F824461A",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:355:25)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1Subnet52644D7B",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1RouteTable902FF084",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1RouteTableAssociationF05BA358",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1DefaultRoute0A463A3C",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:735:23)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:387:32)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1EIPADD671CF",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet1NATGatewayEDCD7D54",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2Subnet7A06BCF4",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2RouteTableF1877DF3",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2RouteTableAssociationAE879AA9",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2DefaultRoute88033A37",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:735:23)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:387:32)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2EIP007C998A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PublicSubnet2NATGatewayB6FC88EC",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet1SubnetAA8F14B1",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet1RouteTableAD63F47A",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet1RouteTableAssociationC4B059F6",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet1DefaultRouteFCFF198D",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:92:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:86:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet2SubnetAF389DF0",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet2RouteTableF2ABD421",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet2RouteTableAssociation2AC037D8",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01PrivateSubnet2DefaultRoute3CFCF704",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:92:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/nat.js:86:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01IGWE5584F53",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:380:25)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc01/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc01VPCGWF44E95B8",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:383:25)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Fn::GetAtt\":[\"Vpc01F824461A\",\"DefaultSecurityGroup\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttVpc01F824461ADefaultSecurityGroupB47B3935",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Ref\":\"Vpc01PrivateSubnet1SubnetAA8F14B1\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc01PrivateSubnet1SubnetAA8F14B1D2DB62B8",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Ref\":\"Vpc01PrivateSubnet2SubnetAF389DF0\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc01PrivateSubnet2SubnetAF389DF0CA6B8B79",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Ref\":\"Vpc01PublicSubnet1Subnet52644D7B\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc01PublicSubnet1Subnet52644D7B09B79E25",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Ref\":\"Vpc01PublicSubnet2Subnet7A06BCF4\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc01PublicSubnet2Subnet7A06BCF487C69B65",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Vpc/Exports/Output{\"Ref\":\"Vpc01F824461A\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc01F824461A2A0E15F5",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Vpc"
+    },
+    "Cluster": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Cluster.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "Vpc"
+      ],
+      "metadata": {
+        "/Cluster/Cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClusterEB0386A7",
+            "trace": [
+              "new Cluster (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/cluster.js:79:25)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Cluster/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Cluster/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Cluster/Exports/Output{\"Ref\":\"ClusterEB0386A7\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefClusterEB0386A796A0E3FE",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Cluster"
+    },
+    "Rds": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Rds.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "Vpc"
+      ],
+      "metadata": {
+        "/Rds/Rds/from 0.0.0.0_0:3306": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rdsfrom000003306ABDC33FC",
+            "trace": [
+              "MutableImport.addIngressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:55:13)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/Rds01/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rds01SubnetGroup7C0866B6",
+            "trace": [
+              "new SubnetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-rds/lib/subnet-group.js:24:29)",
+              "new DatabaseInstanceNew (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-rds/lib/instance.js:174:87)",
+              "new DatabaseInstanceSource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-rds/lib/instance.js:278:9)",
+              "new DatabaseInstance (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-rds/lib/instance.js:380:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/Rds01/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rds014018A640",
+            "trace": [
+              "new DatabaseInstance (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-rds/lib/instance.js:383:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/rds-endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "rdsendpoint",
+            "trace": [
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/rds-password": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "rdspassword",
+            "trace": [
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Rds/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Rds"
+    },
+    "Sns": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Sns.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/Sns/ProductEventsTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsTopic2164919A",
+            "trace": [
+              "new Topic (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic.js:45:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Sns/ProductEventsTopic/cyborgmg@gmail.com/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsTopiccyborgmggmailcom79B962DD",
+            "trace": [
+              "new Subscription (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/subscription.js:39:9)",
+              "Topic.addSubscription (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:33:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Sns/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Sns/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Sns/Exports/Output{\"Ref\":\"ProductEventsTopic2164919A\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefProductEventsTopic2164919A1EE23678",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stack.js:600:13)",
+              "createImportValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Sns"
+    },
+    "Service01": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Service01.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "Cluster",
+        "Rds",
+        "Sns",
+        "Vpc"
+      ],
+      "metadata": {
+        "/Service01/Service01LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Service01LogGroup102A8862",
+            "trace": [
+              "new LogGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:165:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LB2390F328",
+            "trace": [
+              "new BaseLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:28:9)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LBSecurityGroupEE7085B2",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:34:56)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LB/SecurityGroup/to Service01ALB01ServiceSecurityGroupF9ABDC99:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LBSecurityGrouptoService01ALB01ServiceSecurityGroupF9ABDC998080800D3CC8",
+            "trace": [
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:70:13)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:345:19)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:81:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:80:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowTo (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:79:30)",
+              "Connections.allowFrom (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:112:31)",
+              "ApplicationListener.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LBPublicListener21E9450C",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:73:16)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:67:38)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LBPublicListenerECSGroup8E5F9C1A",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:72:42)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01LoadBalancerDNS71443EB4",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:132:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01ServiceURL8B1A7735",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:133:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01TaskDefTaskRole9240B125",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new TaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:97:43)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/TaskDef/TaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01TaskDefTaskRoleDefaultPolicy2F92956B",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:205:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Topic.grantPublish (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:77:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01TaskDef2A307EF6",
+            "trace": [
+              "new TaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:103:25)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01TaskDefExecutionRoleD625C6B3",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "FargateTaskDefinition.obtainExecutionRole (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:336:35)",
+              "AwsLogDriver.bind (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:69)",
+              "new ContainerDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01TaskDefExecutionRoleDefaultPolicy48058B36",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:205:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "LogGroup.grant (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:96:26)",
+              "LogGroup.grantWrite (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:88:21)",
+              "AwsLogDriver.bind (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:23)",
+              "new ContainerDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01Service9EFAFC8C",
+            "trace": [
+              "new BaseService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:142:25)",
+              "new FargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:34:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01ServiceSecurityGroup1DA64F7B",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:531:31)",
+              "new FargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:52:14)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/Service/SecurityGroup/from Service01ALB01LBSecurityGroupA6ED9E7A:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01ServiceSecurityGroupfromService01ALB01LBSecurityGroupA6ED9E7A80804ECBCEE2",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:55:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:305:19)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:105:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:104:30)",
+              "ApplicationListener.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/Service/TaskCount/Target/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01ServiceTaskCountTarget4149107A",
+            "trace": [
+              "new ScalableTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/scalable-target.js:41:26)",
+              "new BaseScalableAttribute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/base-scalable-attribute.js:34:23)",
+              "new ScalableTaskCount (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/scalable-task-count.js:19:9)",
+              "FargateService.autoScaleTaskCount (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:383:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/ALB01/Service/TaskCount/Target/Service01AutoScaling/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB01ServiceTaskCountTargetService01AutoScalingAD2F8C72",
+            "trace": [
+              "new TargetTrackingScalingPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/target-tracking-scaling-policy.js:26:26)",
+              "ScalableTarget.scaleToTrackMetric (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/scalable-target.js:106:16)",
+              "ScalableTaskCount.doScaleToTrackMetric (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/base-scalable-attribute.js:65:21)",
+              "ScalableTaskCount.scaleOnCpuUtilization (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/scalable-task-count.js:43:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service01/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Service01"
+    },
+    "Service02": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Service02.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "Cluster",
+        "Rds",
+        "Sns",
+        "Vpc"
+      ],
+      "metadata": {
+        "/Service02/ProductEventsDlq/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsDlq89DE295F",
+            "trace": [
+              "new Queue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sqs/lib/queue.js:54:23)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ProductEvents/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsBB5A1CE1",
+            "trace": [
+              "new Queue (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sqs/lib/queue.js:54:23)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ProductEvents/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsPolicy62F6A054",
+            "trace": [
+              "new QueuePolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sqs/lib/policy.js:26:9)",
+              "Queue.addToResourcePolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sqs/lib/queue-base.js:26:27)",
+              "SqsSubscription.bind (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns-subscriptions/lib/sqs.js:38:20)",
+              "Topic.addSubscription (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:22:49)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ProductEvents/SnsProductEventsTopicCE864692/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsSnsProductEventsTopicCE8646929ACA8246",
+            "trace": [
+              "new Subscription (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/subscription.js:39:9)",
+              "Topic.addSubscription (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:33:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/Service02LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Service02LogGroup71C46E70",
+            "trace": [
+              "new LogGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:165:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LB38482C7E",
+            "trace": [
+              "new BaseLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:28:9)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LBSecurityGroupA9C5858B",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:34:56)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LB/SecurityGroup/to Service02ALB02ServiceSecurityGroupD4462A75:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LBSecurityGrouptoService02ALB02ServiceSecurityGroupD4462A758080EA34FF67",
+            "trace": [
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:70:13)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:345:19)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:81:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:80:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowTo (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:79:30)",
+              "Connections.allowFrom (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:112:31)",
+              "ApplicationListener.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LBPublicListenerF3668D71",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:73:16)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:67:38)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LBPublicListenerECSGroupBB992ACE",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:72:42)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02LoadBalancerDNSA74C4090",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:132:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceURL9A978817",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:133:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02TaskDefTaskRoleA842BC02",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new TaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:97:43)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/TaskDef/TaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02TaskDefTaskRoleDefaultPolicy74F34361",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:205:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Topic.grantPublish (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:77:26)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02TaskDefC88B37BC",
+            "trace": [
+              "new TaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:103:25)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02TaskDefExecutionRole83064E8B",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "FargateTaskDefinition.obtainExecutionRole (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:336:35)",
+              "AwsLogDriver.bind (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:69)",
+              "new ContainerDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02TaskDefExecutionRoleDefaultPolicyB8FF7005",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/role.js:205:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "LogGroup.grant (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:96:26)",
+              "LogGroup.grantWrite (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-logs/lib/log-group.js:88:21)",
+              "AwsLogDriver.bind (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:23)",
+              "new ContainerDefinition (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceCD9825DF",
+            "trace": [
+              "new BaseService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:142:25)",
+              "new FargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:34:9)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceSecurityGroupCA59572C",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:531:31)",
+              "new FargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:52:14)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/Service/SecurityGroup/from Service02ALB02LBSecurityGroupA033FD68:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceSecurityGroupfromService02ALB02LBSecurityGroupA033FD688080293A1336",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:55:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:305:19)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:105:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ec2/lib/connections.js:104:30)",
+              "ApplicationListener.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/Service/TaskCount/Target/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceTaskCountTarget95635ACE",
+            "trace": [
+              "new ScalableTarget (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/scalable-target.js:41:26)",
+              "new BaseScalableAttribute (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/base-scalable-attribute.js:34:23)",
+              "new ScalableTaskCount (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/scalable-task-count.js:19:9)",
+              "FargateService.autoScaleTaskCount (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:383:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/ALB02/Service/TaskCount/Target/Service02AutoScaling/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALB02ServiceTaskCountTargetService02AutoScaling8E144747",
+            "trace": [
+              "new TargetTrackingScalingPolicy (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/target-tracking-scaling-policy.js:26:26)",
+              "ScalableTarget.scaleToTrackMetric (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/scalable-target.js:106:16)",
+              "ScalableTaskCount.doScaleToTrackMetric (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-applicationautoscaling/lib/base-scalable-attribute.js:65:21)",
+              "ScalableTaskCount.scaleOnCpuUtilization (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/aws-ecs/lib/base/scalable-task-count.js:43:22)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/Service02/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-4QS74i/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8860:24)",
+              "/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime2301452080000956041/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Service02"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/cyborg/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/jsp-2.1/6.1.14/jsp-2.1-6.1.14.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/c-1_0-rt.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/c-1_0.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/c.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/fmt-1_0-rt.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/fmt-1_0.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/fmt.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/fn.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/permittedTaglibs.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/scriptfree.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/sql-1_0-rt.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/sql-1_0.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/sql.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/x-1_0-rt.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/x-1_0.tld" project="camel-alura"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsp-2.1-6.1.14.jar/META-INF/x.tld" project="camel-alura"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/cyborg/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/jasypt/jasypt/1.8/jasypt-1.8.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/activemq/kahadb/5.6.0/kahadb-5.6.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-xmljson/2.16.1/camel-xmljson-2.16.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-spring/2.16.1/camel-spring-2.16.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-messaging/4.1.8.RELEASE/spring-messaging-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/leveldbjni/leveldbjni-osx/1.2/leveldbjni-osx-1.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/mqtt-client/mqtt-client/1.0/mqtt-client-1.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/logging/log4j/log4j-api/2.4/log4j-api-2.4.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-scala/1.9/hawtdispatch-scala-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.4/log4j-slf4j-impl-2.4.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/activemq/activemq-core/5.6.0/activemq-core-5.6.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/leveldbjni/leveldbjni-linux32/1.2/leveldbjni-linux32-1.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/geronimo/specs/geronimo-servlet_3.0_spec/1.0/geronimo-servlet_3.0_spec-1.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-jms/4.1.8.RELEASE/spring-jms-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/logging/log4j/log4j-core/2.4/log4j-core-2.4.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-transport/1.9/hawtdispatch-transport-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtjni/hawtjni-runtime/1.5/hawtjni-runtime-1.5.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/iq80/leveldb/leveldb-api/0.2/leveldb-api-0.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/fuse-extra/fusemq-leveldb/1.1/fusemq-leveldb-1.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtbuf/hawtbuf-proto/1.9/hawtbuf-proto-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/hadoop/hadoop-core/1.0.0/hadoop-core-1.0.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/iq80/leveldb/leveldb/0.2/leveldb-0.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/activemq/activemq-camel/5.6.0/activemq-camel-5.6.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.11/jaxb-impl-2.2.11.jar"/>
+  <path value="/home/cyborg/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar"/>
+  <path value="/home/cyborg/.m2/repository/xalan/xalan/2.7.0/xalan-2.7.0.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/leveldbjni/leveldbjni/1.2/leveldbjni-1.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-jms/2.16.1/camel-jms-2.16.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch/1.9/hawtdispatch-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar"/>
+  <path value="/home/cyborg/.m2/repository/ant/ant/1.6.5/ant-1.6.5.jar"/>
+  <path value="/home/cyborg/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-http-common/2.16.1/camel-http-common-2.16.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar"/>
+  <path value="/home/cyborg/.m2/repository/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14.jar"/>
+  <path value="/home/cyborg/.m2/repository/xom/xom/1.2.5/xom-1.2.5.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/leveldbjni/leveldbjni-linux64/1.2/leveldbjni-linux64-1.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/scala-lang/scala-library/2.9.1/scala-library-2.9.1.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/xerial/snappy/snappy-java/1.0.3/snappy-java-1.0.3.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar"/>
+  <path value="/home/cyborg/.m2/repository/org/apache/camel/camel-http4/2.16.1/camel-http4-2.16.1.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="16" name="%0" offset="621" path="%1"/>
+   <linked-el length="16" name="%0" offset="1041" path="%1"/>
+   <linked-el length="16" name="%0" offset="1346" path="%1"/>
+   <linked-el length="16" name="%0" offset="773" path="%1"/>
+   <linked-el length="91" name="%2" offset="2001" path="%3"/>
+   <linked-el length="91" name="%4" offset="2001" path="%3"/>
+   <linked-el length="91" name="%5" offset="2001" path="%3"/>
+   <linked-el length="9" name="%6" offset="1334" path="%3"/>
+   <linked-el length="9" name="%6" offset="2258" path="%3"/>
+   <linked-el length="16" name="%7" offset="621" path="%1"/>
+   <linked-el length="16" name="%7" offset="1041" path="%1"/>
+   <linked-el length="16" name="%7" offset="1346" path="%1"/>
+   <linked-el length="16" name="%7" offset="773" path="%1"/>
+   <linked-el length="91" name="%8" offset="2001" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/camel-alura/pom.xml" value="%1"/>
+  <alias path="camel" value="%0"/>
+  <alias path="property.clienteId" value="%2"/>
+  <alias path="property.ebookId" value="%4"/>
+  <alias path="property" value="%5"/>
+  <alias
+   path="/camel-alura/src/main/java/br/com/caelum/camel/RotaPedidos.java" value="%3"/>
+  <alias path="body" value="%6"/>
+  <alias path="version" value="%7"/>
+  <alias path="property.pedidoId" value="%8"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: employeeModule
+        uri: http://localhost:8081/
+        predicates:
+          - Path=/employee/message/name
+          - Method=GET
+        filters:
+          - name: RewritePathWithHeader
+            args:
+              value: /employee/message/{x-name}/name
+      - id: consumerModule
+        uri: http://localhost:8082/
+        predicates:
+        - Path=/consumer/message/id
+        filters:
+          - name: RewritePathWithHeader
+            args:
+              value: /consumer/message/{x-id}/id

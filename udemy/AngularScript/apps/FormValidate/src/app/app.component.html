@@ -1,0 +1,14 @@
+<form #form="ngForm">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" [(ngModel)]="name" #nameVerifi="ngModel" required >
+    <span *ngIf="nameVerifi.invalid" >Nome requerido</span>
+  </div>
+  <br/>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" [(ngModel)]="email" #emailVerifi="ngModel" email required>
+    <span *ngIf="emailVerifi.invalid" >Email requerido</span>
+  </div>
+  <button type="submit" [disabled]="!form.valid" >submit</button>
+</form>

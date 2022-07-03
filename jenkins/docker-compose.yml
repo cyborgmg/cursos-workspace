@@ -1,0 +1,72 @@
+version: "3"
+
+services:
+
+  pg-tasks:
+    container_name: pg-tasks
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    networks:
+      - sonarnet
+    environment: 
+      - POSTGRES_PASSWORD=c6b94gmg
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=tasks
+    volumes:
+      - /home/cyborg/Dockers/postgres/data:/var/lib/postgresql/data
+
+  pg-sonar:
+    container_name: pg-sonar
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    networks:
+      - sonarnet
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+    volumes:
+      - /home/cyborg/Dockers/sonar/postgresql/data:/var/lib/postgresql/data
+
+  sonarqube:
+    container_name: sonar
+    image: sonarqube:7.9.5-community
+    ports:
+      - "9000:9000"
+    networks:
+      - sonarnet
+    environment:
+      - SONARQUBE_JDBC_URL=jdbc:postgresql://pg-sonar:5432/sonar
+    depends_on:
+      - pg-sonar
+    volumes:
+      - /home/cyborg/Dockers/sonar/sonarqube:/opt/sonarqube
+
+  jenkins:
+    container_name: jenkins
+    image: cyborgmg/jenkins:latest
+    ports:
+      - 8000:8000
+    networks:
+      - sonarnet
+    volumes:
+      - /home/cyborg/Dockers/jenkins/jenkins_home:/var/jenkins_home
+    environment:
+      - HTTP_PORT=8000
+
+  tomcat:
+    container_name: tomcat
+    image: cyborgmg/tomcat:latest
+    ports:
+      - 8001:8080
+    networks:
+      - sonarnet
+    volumes:
+      - /home/cyborg/Dockers/tomcat/conf:/root/tomcat/conf
+      - /home/cyborg/Dockers/tomcat/webapps:/root/tomcat/webapps
+    environment:
+      - HTTP_PORT=8080
+
+networks:
+  sonarnet:

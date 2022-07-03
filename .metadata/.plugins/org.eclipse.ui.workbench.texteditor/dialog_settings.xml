@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="a data de entrega"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="a data de entrega"/>
+			<item value="a data de entrega será em"/>
+			<item value="que tipo do aluguel seja"/>
+			<item value="que o tipo do aluguel seja"/>
+			<item value="queOTipoDoAluguelSeja"/>
+			<item value="que o tipo do aluguel seja comum"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1459"/>
+		<item key="DIALOG_Y_ORIGIN" value="304"/>
+		<item key="DIALOG_WIDTH" value="339"/>
+		<item key="DIALOG_HEIGHT" value="437"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|9.0|0|GTK|1|"/>
+	</section>
+</section>

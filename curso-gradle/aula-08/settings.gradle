@@ -1,0 +1,4 @@
+rootProject.name = 'aula-08'
+include 'loja-api'
+include 'loja-async'
+include 'loja-job'

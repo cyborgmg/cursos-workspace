@@ -1,0 +1,10 @@
+package br.com.cyborg;
+
+public class PilhaDaoMock implements PilhaDao {
+
+    @Override
+    public Pilha save(Pilha pilha) {
+        System.out.println("salvando pilha dao mock");
+        return pilha;
+    }
+}

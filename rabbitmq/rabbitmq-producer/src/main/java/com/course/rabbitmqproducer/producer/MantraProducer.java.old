@@ -1,0 +1,21 @@
+package com.course.rabbitmqproducer.producer;
+
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MantraProducer {
+	
+	@Autowired
+	private RabbitTemplate rabbitTemplate;
+	
+	public void sendHello(String json) {
+
+		String old = String.valueOf((char)39);
+		String novo = String.valueOf((char)34);
+
+		rabbitTemplate.convertAndSend("kestraa.exchange", "crawler.mercante", json.replace(old,novo));
+	}
+
+}
