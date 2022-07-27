@@ -1,6 +1,7 @@
 package com.loizenai.restcontrolleradvice.controller;
 
 
+import com.loizenai.restcontrolleradvice.errors.Errors;
 import com.loizenai.restcontrolleradvice.model.ExceptionResponse;
 import com.loizenai.restcontrolleradvice.model.Obj;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,8 +24,6 @@ import java.util.Objects;
 @Validated
 public class ResourceObj {
 
-    private final String INVALID_ID = "id invalido";
-
     @GetMapping(value = "/test")
     @ResponseStatus(HttpStatus.OK)
     @Operation(summary = "Request transaction refund", description = "This operation allows the API consumer to refund",
@@ -44,8 +43,8 @@ public class ResourceObj {
                             content = @Content(mediaType = "application/json", schema = @Schema(implementation = ExceptionResponse.class)))})
     public Obj getObj(@Parameter(description = "id") Integer id ){
 
-        if(Objects.isNull(id)||id>=10){
-            throw new ValidationException(INVALID_ID);
+        if(Objects.isNull(id)||id>10){
+            throw new ValidationException(Errors.INVALID_ID);
         }
 
         return Obj

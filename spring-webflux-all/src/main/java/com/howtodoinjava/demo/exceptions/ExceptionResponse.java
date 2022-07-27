@@ -1,4 +1,4 @@
-package com.loizenai.restcontrolleradvice.model;
+package com.howtodoinjava.demo.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.micrometer.core.instrument.Tag;
@@ -29,6 +29,6 @@ public class ExceptionResponse {
 
     @JsonIgnore
     public Collection<Tag> toTags() {
-        return List.of(Tag.of("error", this.status.toString()));
+        return Arrays.asList(Tag.of("error", this.status.toString()));
     }
 }
